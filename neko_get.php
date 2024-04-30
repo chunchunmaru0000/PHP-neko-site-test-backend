@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 include "neko_class.php";
 
-
 $conn = new mysqli('localhost', 'root', 'root', 'neko');
 if ($conn->connect_error) die("параша не подключилась" . $conn->connect_error);
 
