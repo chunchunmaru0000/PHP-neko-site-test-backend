@@ -43,7 +43,7 @@ if ($res->num_rows > 0){
     while ($row = $res->fetch_assoc()){
         $id = $row['id'];
 
-        $specs_for_this = array_key_exists($id, $specs) ? $specs[$id] : json_decode('{}');
+        $specs_for_this = array_key_exists($id, $specs) ? (object)$specs[$id] : json_decode('{}');
 
         $photos_for_this = array_key_exists($id, $photos) ? $photos[$id] : [];
         $image = $row["image"];

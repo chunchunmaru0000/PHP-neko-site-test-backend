@@ -1,10 +1,10 @@
 <?php
 class NekoPost {
-    public $Id;
-    public $Image;
-    public $Price;
-    public $Name;
-    public $Description;
-    public $Specifications;
-    public $Photos;
+    public int $Id;
+    public string $Image;
+    public float $Price;
+    public string $Name;
+    public string $Description;
+    public object $Specifications;
+    public array $Photos;
 }
